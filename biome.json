@@ -36,7 +36,11 @@
       },
       "nursery": {
         "useImportRestrictions": "off",
-        "useSortedClasses": "error"
+        "useSortedClasses": {
+          "level": "error",
+          "fix": "safe",
+          "options": {}
+        }
       },
       "performance": {
         "noDelete": "warn",

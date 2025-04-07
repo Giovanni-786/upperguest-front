@@ -1,12 +1,16 @@
-import { Outlet } from "react-router"
-import Navbar from "./features/Navbar/Navbar"
+import { Outlet } from 'react-router'
+// import { MainNavbar } from './features/navbar'
+import { SidebarProvider } from '@/components/ui/sidebar'
+import { AppSidebar } from './components/AppSidebar/AppSidebar'
+import { MainNavbar } from './features/navbar'
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <SidebarProvider>
+      <AppSidebar />
+      <MainNavbar />
       <Outlet />
-    </>
+    </SidebarProvider>
   )
 }
 
