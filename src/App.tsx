@@ -5,16 +5,14 @@ import { MainNavbar } from './features/navbar'
 
 function App() {
   return (
-    
     <SidebarProvider>
       <AppSidebar />
-      <main className='flex-1'>
-      <MainNavbar />      
+      <main className="flex-1">
+        <MainNavbar />
+        <SidebarTrigger />
         <Outlet />
-      </main>      
+      </main>
     </SidebarProvider>
-    
-    
   )
 }
 

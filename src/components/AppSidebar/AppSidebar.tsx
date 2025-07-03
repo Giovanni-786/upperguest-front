@@ -43,7 +43,7 @@ const items = [
 
 export function AppSidebar() {
   return (
-    <Sidebar>
+    <Sidebar collapsible="icon">
       <SidebarContent>
         <SidebarGroup className="p-0">
           <SidebarGroupLabel className="flex h-16 w-full items-center justify-center rounded-none border-[#cacaca] border-b-1 border-solid">
