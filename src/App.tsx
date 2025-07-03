@@ -1,16 +1,20 @@
 import { Outlet } from 'react-router'
-// import { MainNavbar } from './features/navbar'
-import { SidebarProvider } from '@/components/ui/sidebar'
+import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
 import { AppSidebar } from './components/AppSidebar/AppSidebar'
 import { MainNavbar } from './features/navbar'
 
 function App() {
   return (
+    
     <SidebarProvider>
       <AppSidebar />
-      <MainNavbar />
-      <Outlet />
+      <main className='flex-1'>
+      <MainNavbar />      
+        <Outlet />
+      </main>      
     </SidebarProvider>
+    
+    
   )
 }
 
