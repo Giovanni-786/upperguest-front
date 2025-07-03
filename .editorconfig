@@ -1,0 +1,11 @@
+# Editor config é necessário para padronizar o tipo de quebra de linha usada pelo VS Code no Windows.
+
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false

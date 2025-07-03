@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "organizeImports": {
     "enabled": false
   },
@@ -37,8 +37,8 @@
       "nursery": {
         "useImportRestrictions": "off",
         "useSortedClasses": {
-          "level": "error",
           "fix": "safe",
+          "level": "warn",
           "options": {}
         }
       },
